@@ -25,7 +25,6 @@ def get_eth_movement():
 # Мониторим изменения цены и выводим сообщения в консоль
 def monitor_eth_price():
     last_price = get_eth_price()
-    #print(last_price)
     while True:
         current_price = get_eth_price()
         percent_change = abs(current_price - last_price) / last_price * 100
